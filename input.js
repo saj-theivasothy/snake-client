@@ -18,19 +18,27 @@ const handleUserInput = function(key, connection) {
   }
   if (key === 'w') {
     connection.write("Move: up");
-    console.log('You pressed w');
   }
   if (key === 'a') {
     connection.write("Move: left")
-    console.log('You pressed a');
   }
   if (key === 's') {
     connection.write("Move: down")
-    console.log('You pressed s');
   }
   if (key === 'd') {
     connection.write("Move: right")
-    console.log('You pressed d');
+  }
+  if (key === 'h') {
+    connection.write("Say: Hello")
+  }
+  if (key === 'i') {
+    connection.write("Say: Good")
+  }
+  if (key === 'b') {
+    connection.write("Say: bad")
+  }
+  if (key === 'l') {
+    connection.write("Say: lol")
   }
 }
 
